@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -19,13 +19,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #078cb1;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
@@ -36,9 +38,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* General body and heading styling */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background-color: #f2f2f2;
 }
 
@@ -47,4 +51,3 @@ h1 {
   text-align: center;
   margin-top: 50px;
 }
-

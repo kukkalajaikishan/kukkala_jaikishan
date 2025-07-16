@@ -2,7 +2,7 @@ import './Certifications.css';
 
 function Certifications() {
   return (
-    <div className="certifications-container">
+    <div className="certifications">
       <h2>📜 Certifications</h2>
       <ul className="certifications-list">
         <li>

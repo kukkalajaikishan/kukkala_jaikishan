@@ -20,6 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Container */
 .home-container {
   max-width: 1100px;
   margin: auto;
@@ -83,7 +84,7 @@ body {
   box-shadow: 0 6px 20px rgba(0, 174, 255, 0.3);
 }
 
-/* Section Styling */
+/* Sections */
 .section {
   background: var(--bg-card);
   padding: 40px;
@@ -110,6 +111,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 ul li {
@@ -177,14 +179,22 @@ ul li:hover {
   color: #000;
 }
 
-/* Responsive */
+/* Tablets (≤768px) */
 @media (max-width: 768px) {
+  .home-container {
+    padding: 50px 16px;
+  }
+
   .profile h1 {
     font-size: 2rem;
   }
 
   .profile h2 {
     font-size: 1rem;
+  }
+
+  .profile p {
+    font-size: 0.95rem;
   }
 
   .section {
@@ -197,5 +207,74 @@ ul li:hover {
 
   .cta-button {
     padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .home-container {
+    padding: 40px 12px;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 15px;
+  }
+
+  .profile h1 {
+    font-size: 1.6rem;
+  }
+
+  .profile h2 {
+    font-size: 0.9rem;
+  }
+
+  .profile p {
+    font-size: 0.85rem;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+    padding-left: 10px;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .skill-grid h4 {
+    font-size: 1rem;
+  }
+
+  .skill-grid p {
+    font-size: 0.85rem;
+  }
+
+  .contact p,
+  .contact a {
+    font-size: 0.9rem;
+  }
+
+  .contact a[href$=".pdf"] {
+    padding: 8px 18px;
+    font-size: 0.9rem;
   }
 }
