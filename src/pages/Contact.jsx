@@ -24,11 +24,11 @@ function Contact() {
       <p>
         💻 GitHub:{' '}
         <a
-          href="https://github.com/jaikishan"
+          href="https://github.com/kukkalajaikishan"
           target="_blank"
           rel="noreferrer"
         >
-          github.com/jaikishan
+          github.com/kukkalajaikishan
         </a>
       </p>
     </section>
