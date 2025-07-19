@@ -1,5 +1,5 @@
 import './Home.css';
-import profile from '../assets/profile.png';
+import profile from '../assets/profile.png'; // your uploaded image
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -12,7 +12,9 @@ function Home() {
   return (
     <div className="home-container">
       <section className="profile" data-aos="fade-down">
-<img src={profile} alt="K Jai Kishan" className="profile-pic" />
+        <div className="profile-pic-wrapper">
+          <img src={profile} alt="K Jai Kishan" className="profile-pic" />
+        </div>
         <h1>K Jai Kishan</h1>
         <h2>Full-Stack Developer | UX Designer | Cloud & Game Tech Enthusiast</h2>
         <p>
