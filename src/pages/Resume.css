@@ -1,43 +1,50 @@
+/* Resume Container */
 .resume-container {
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
   text-align: center;
-  background: var(--bg-card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  color: var(--text-light);
+  background: var(--bg-card, #1e1e1e);
+  border-radius: var(--radius, 10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: var(--text-light, #ffffff);
 }
 
+/* Heading */
 .resume-container h1 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: var(--primary);
+  color: var(--primary, #00bfff);
 }
 
+/* Paragraph */
 .resume-container p {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: var(--text-muted, #cccccc);
   margin-bottom: 20px;
 }
 
+/* Download Button */
 .resume-download-btn {
   display: inline-block;
   padding: 10px 20px;
   margin-bottom: 30px;
   border-radius: 25px;
-  background-color: var(--primary);
-  color: #000;
+  background-color: var(--primary, #00bfff);
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: scale(1);
 }
 
 .resume-download-btn:hover {
-  background-color: #008ecc;
-  color: #000;
+  background-color: #0077b6;
+  color: #fff;
+  transform: scale(1.05);
 }
 
+/* PDF Preview Frame */
 .resume-preview {
   width: 100%;
   height: 600px;
@@ -46,7 +53,7 @@
   margin-top: 20px;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .resume-container {
     padding: 30px 16px;

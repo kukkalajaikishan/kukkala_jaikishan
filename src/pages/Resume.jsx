@@ -9,14 +9,14 @@ const Resume = () => {
       <p>You can view or download my resume using the button below.</p>
 
       {/* Download button */}
-      <a href="/jaikishan_resume.pdf" download className="resume-download-btn">
+      <a href="/Kukkala_Jai_Kishan_Resume.pdf" download className="resume-download-btn">
         ⬇️ Download Resume
       </a>
 
       {/* PDF Preview */}
       <iframe
-        src="/jaikishan_resume.pdf"
-        title="jaikishan_resume"
+        src="/Kukkala_Jai_Kishan_Resume.pdf"
+        title="Kukkala_Jai_Kishan_Resume"
         className="resume-preview"
         frameBorder="0"
       ></iframe>
@@ -25,7 +25,7 @@ const Resume = () => {
       <p style={{ marginTop: '20px' }}>
         Having trouble viewing?{' '}
         <a
-          href="/jaikishan_resume.pdf"
+          href="/Kukkala_Jai_Kishan_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: 'var(--primary)', textDecoration: 'underline' }}
