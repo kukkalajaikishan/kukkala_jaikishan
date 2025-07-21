@@ -1,31 +1,82 @@
+/* Root Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 16px 40px;
   background-color: #0e0e0e;
-  box-shadow: 0 4px 12px rgba(0, 174, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 174, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
+/* Brand / Logo */
 .logo {
   color: #00aeff;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* Navigation Links Container */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 30px;
 }
 
+/* Each Navigation Link */
 .nav-links li a {
   text-decoration: none;
-  color: #f5f5f5;
+  color: #e0e0e0;
+  font-size: 1rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  position: relative;
+  padding: 4px 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #00aeff;
+  transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #00aeff;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Responsive (≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+    gap: 16px;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 6px 0;
+  }
 }
